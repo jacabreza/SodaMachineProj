@@ -8,5 +8,8 @@ namespace SodaMachineProject
 {
     class Customer
     {
+        public Wallet wallet;
+        public Backpack backpack;
+
     }
 }

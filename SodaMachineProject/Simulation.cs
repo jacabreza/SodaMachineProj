@@ -8,5 +8,8 @@ namespace SodaMachineProject
 {
     class Simulation
     {
+        public SodaMachine sodaMachine;
+        public Customer customer;
+
     }
 }
