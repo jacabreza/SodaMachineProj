@@ -8,8 +8,26 @@ namespace SodaMachineProject
 {
     class Card
     {
+        // Member Variables (HAS A)
         private double availableFunds;
-        public double AvailableFunds;
+        
+        //Properties
+        public double AvailableFunds
+        {
+            get
+            {
+                return availableFunds;
+            }
+
+        }
+
+        // Constructor (SPAWNER)
+        public Card()
+        {
+
+        }
+
+        // Member Methods (CAN DO)
 
     }
 }

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace SodaMachineProject
 {
-    class Nickle
+    class Nickle : Coin
     {
+        // Member Variables (HAS A)
+
+        // Constructor (SPAWNER)
+        public Nickle(string name)
+        {
+            this.name = name;
+            value = 0.05;
+        }
+
+        // Member Methods (CAN DO)
     }
 }

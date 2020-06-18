@@ -8,9 +8,29 @@ namespace SodaMachineProject
 {
     public abstract class Can
     {
+        // Member Variables (HAS A)
         protected double cost;
-        public double Cost;
         public string name;
+
+        // Properties
+        public double Cost
+        {
+            get
+            {
+                return cost;
+            }
+
+        }
+
+
+        // Constructor (SPAWNER)
+        public Can()
+        {
+           
+            
+        }
+
+        // Member Methods (CAN DO)
 
     }
 }
