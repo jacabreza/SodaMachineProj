@@ -16,6 +16,7 @@ namespace SodaMachineProject
         public Wallet()
         {
             coins = new List<Coin>();
+            card = new Card();
             CoinsInWallet();
 
         }

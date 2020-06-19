@@ -10,8 +10,10 @@ namespace SodaMachineProject
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer();
-            List<Coin> test = customer.InsertingCoins();
+            
+
+            //Customer customer = new Customer();
+            //List<Coin> test = customer.InsertingCoins();
 
             //customer.wallet.coins.Add(new Quarter());
 
@@ -30,7 +32,7 @@ namespace SodaMachineProject
 
             Simulation simulation = new Simulation();
             simulation.RunSimulation();
-            
+
         }
     }
 }

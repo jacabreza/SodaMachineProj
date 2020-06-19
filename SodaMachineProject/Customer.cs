@@ -29,14 +29,13 @@ namespace SodaMachineProject
         {
             backpack.cans.Add(can);
         }
-        public void BuyingSoda()
-        {
+       
 
-        }
         public List<Coin> InsertingCoins()
         {
             List<Coin> coinsToInsert = new List<Coin>();
             bool isStillInsertingCoins = true;
+            // double totalNumberOfCoins = 0;
 
             while (isStillInsertingCoins)
             {
@@ -52,6 +51,9 @@ namespace SodaMachineProject
                                 Coin coinToPayWith = wallet.coins[i];
                                 wallet.coins.Remove(coinToPayWith);
                                 coinsToInsert.Add(coinToPayWith);
+                                Console.WriteLine("Quarter was Added");
+                                // totalNumberOfCoins += coinToPayWith.Value;
+                                break;
                             }
                         }
                         break;
@@ -64,6 +66,8 @@ namespace SodaMachineProject
                                 Coin coinToPayWith = wallet.coins[i];
                                 wallet.coins.Remove(coinToPayWith);
                                 coinsToInsert.Add(coinToPayWith);
+                                Console.WriteLine("Dime was Added");
+                                break;
                             }
                         }
                         break;
@@ -76,6 +80,8 @@ namespace SodaMachineProject
                                 Coin coinToPayWith = wallet.coins[i];
                                 wallet.coins.Remove(coinToPayWith);
                                 coinsToInsert.Add(coinToPayWith);
+                                Console.WriteLine("Nickle was Added");
+                                break;
                             }
                         }
                         break;
@@ -88,6 +94,8 @@ namespace SodaMachineProject
                                 Coin coinToPayWith = wallet.coins[i];
                                 wallet.coins.Remove(coinToPayWith);
                                 coinsToInsert.Add(coinToPayWith);
+                                Console.WriteLine("Penny was Added");
+                                break;
                             }
                         }
                         break;
@@ -97,20 +105,36 @@ namespace SodaMachineProject
                         break;
 
                     default:
-                        Console.WriteLine("Oops! Wrong number.");
+                        Console.WriteLine("Invalid Response. Please Try Again!");
                         break;
-
-                        // if I still have one quarter in my wallet...
-                        // add a quarter to coinsToInsert   
-                        // also take a quarter out of wallet.coins
                 }
 
             } 
             return coinsToInsert;
         }
 
-       
 
+        public void NotEnoughMoney()
+        {
+           
+        }
+
+
+        // If not enough money, don’t complete transaction 
+        // and give the money back.
+
+        // If exact change, accept payment 
+        // and dispense a soda into Backpack.
+
+        // If too much money, accept the payment
+        // return change as a list of coins from internal, limited register, 
+        // and dispense a soda into Backpack.
+
+        // If too much money, but there isn’t sufficient change in the machine’s register,
+        // don’t complete transaction: give the money back.
+
+        // If exact or too much money, but there isn’t sufficient inventory,
+        // don’t complete the transaction: give the money back. 
 
 
 

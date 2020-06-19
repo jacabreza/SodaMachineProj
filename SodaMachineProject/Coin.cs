@@ -19,14 +19,12 @@ namespace SodaMachineProject
             {
                 return value;
             }
-
         }
-
 
         // Constructor (SPAWNER)
         public Coin()
         {
-
+            
         }
 
         // Member Methods (CAN DO)
