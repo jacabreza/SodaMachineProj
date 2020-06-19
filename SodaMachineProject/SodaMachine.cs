@@ -89,13 +89,20 @@ namespace SodaMachineProject
 
             if (totalValueOfCoins > dispensedCan.Cost)
             {
-                if (inventory < inventory.Count)
+                for (int i = 0; i < inventory.Count; i++)
                 {
-                    
-                    //insufficient inventory for Soda
+                    if (inventory[i].name < dispensedCan.name)
+                    {
+
+                            
+                        //insufficient inventory for Soda
+                    }
+
                 }
-                else if (totalValueOfCoins > register)
+                    
+                else if (register[i].name < totalValueOfCoins)
                 {
+
                     //insufficient change in Register
                 }
                 else if ()
@@ -129,16 +136,16 @@ namespace SodaMachineProject
 
 
 
-            for (int i = 0; i < inventory.Count; i++)
-            {
-                if (inventory[i].name == dispensedCan.name)
-                {
-                    inventory.RemoveAt(i);
-                    customer.AddCansToBackPack(dispensedCan);
-                    break;
-                }
+            //for (int i = 0; i < inventory.Count; i++)
+            //{
+            //    if (inventory[i].name == dispensedCan.name)
+            //    {
+            //        inventory.RemoveAt(i);
+            //        customer.AddCansToBackPack(dispensedCan);
+            //        break;
+            //    }
 
-            }
+            //}
 
         }
 
